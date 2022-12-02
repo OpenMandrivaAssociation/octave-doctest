@@ -4,10 +4,10 @@ Summary:	Documentation tests for Octave
 Name:		octave-%{octpkg}
 Version:	0.7.0
 Release:	1
-Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	BSD
 Group:		Sciences/Mathematics
-Url:		https://octave.sourceforge.io/%{octpkg}/
+Url:		https://packages.octave.org/%{octpkg}/
 BuildArch:	noarch
 
 BuildRequires:	octave-devel >= 4.2.0
@@ -23,8 +23,6 @@ blocks of example code within documentation files.  It then executes
 the code and confirms the output is correct.  This can be useful as part of
 a testing framework or simply to ensure that documentation stays up-to-date
 during software development.
-
-This package is part of community Octave-Forge collection.
 
 %files
 %license COPYING
