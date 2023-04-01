@@ -1,21 +1,23 @@
 %global octpkg doctest
 
 Summary:	Documentation tests for Octave
-Name:		octave-%{octpkg}
-Version:	0.7.0
+Name:		octave-doctest
+Version:	0.8.0
 Release:	1
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	BSD
 Group:		Sciences/Mathematics
-Url:		https://packages.octave.org/%{octpkg}/
-BuildArch:	noarch
+#Url:		https://packages.octave.org/doctest/
+Url:		https://github.com/gnu-octave/octave-doctest/
+Source0:	https://github.com/gnu-octave/octave-doctest/releases/download/v%{version}/doctest-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 4.2.0
+BuildRequires:  octave-devel >= 4.2.0
 
 Requires:	octave(api) = %{octave_api}
 
 Requires(post): octave
 Requires(postun): octave
+
+BuildArch:	noarch
 
 %description
 The Octave-Forge Doctest package finds specially-formatted
@@ -36,11 +38,7 @@ during software development.
 %prep
 %autosetup -p1 -n %{octpkg}-%{version}
 
-# remove backup files
-#find . -name \*~ -delete
-
 %build
-%set_build_flags
 %octave_pkg_build
 
 %install
