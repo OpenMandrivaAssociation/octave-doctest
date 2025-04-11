@@ -3,7 +3,7 @@
 Summary:	Documentation tests for Octave
 Name:		octave-doctest
 Version:	0.8.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Sciences/Mathematics
 #Url:		https://packages.octave.org/doctest/
