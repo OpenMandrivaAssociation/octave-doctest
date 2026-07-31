@@ -2,8 +2,8 @@
 
 Summary:	Documentation tests for Octave
 Name:		octave-doctest
-Version:	0.8.0
-Release:	2
+Version:	0.8.2
+Release:	1
 License:	BSD
 Group:		Sciences/Mathematics
 #Url:		https://packages.octave.org/doctest/
@@ -36,7 +36,7 @@ during software development.
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n %{octpkg}-%{version}
+%autosetup -p1 -n doctest-0.8.2
 
 %build
 %octave_pkg_build
